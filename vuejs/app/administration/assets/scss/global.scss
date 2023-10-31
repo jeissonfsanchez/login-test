@@ -1,0 +1,41 @@
+$background-app: '#f3f5f7';
+$color-primary: '#0b5ed7';
+
+.c-app {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    background: #f0f3f5;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border: none;
+  }
+
+  .input-group-text {
+    background-color: $background-app;
+    border-right: none;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    background-color: $background-app;
+    border-radius: 4px;
+  }
+
+  .btn-primary {
+    background-color: $color-primary;
+    border: none;
+  }
+
+  .text-underline {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+  }
+
+  .error-message {
+    color: red;
+    margin-top: 5px;
+  }

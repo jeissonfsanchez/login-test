@@ -1,0 +1,86 @@
+{
+  "name": "@coreui/coreui-free-vue-admin-template",
+  "version": "4.2.0",
+  "description": "CoreUI Free Vue Admin Template",
+  "bugs": {
+    "url": "https://github.com/coreui/coreui-free-vue-admin-template/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:coreui/coreui-free-vue-admin-template.git"
+  },
+  "license": "MIT",
+  "author": "The CoreUI Team (https://github.com/orgs/coreui/people)",
+  "scripts": {
+    "dev": "npm run serve",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e",
+    "clearCache": "vue-cli-service clearCache",
+    "release": "npm-run-all clearCache lint build test:unit test:e2e",
+    "copy-assets": "cp -R vue/dist public/",
+    "production": "npm run build -- --mode production && npm run copy-assets"
+  },
+  "dependencies": {
+    "@coreui/chartjs": "^3.1.2",
+    "@coreui/coreui": "^4.2.6",
+    "@coreui/icons": "^3.0.1",
+    "@coreui/icons-vue": "2.0.0",
+    "@coreui/utils": "^2.0.2",
+    "@coreui/vue": "^4.8.1",
+    "@coreui/vue-chartjs": "2.1.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
+    "@popperjs/core": "^2.11.7",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.3.0",
+    "core-js": "^3.31.0",
+    "path-browserify": "^1.0.1",
+    "vue": "^3.2.45",
+    "vue-jwt-decode": "^0.1.0",
+    "vue-router": "^4.1.6",
+    "vue-toast-notification": "^3.1.1",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/eslint-parser": "^7.22.5",
+    "@vue/cli-plugin-babel": "~5.0.8",
+    "@vue/cli-plugin-e2e-cypress": "~5.0.8",
+    "@vue/cli-plugin-eslint": "~5.0.8",
+    "@vue/cli-plugin-router": "~5.0.8",
+    "@vue/cli-plugin-unit-jest": "~5.0.7",
+    "@vue/cli-plugin-vuex": "~5.0.8",
+    "@vue/cli-service": "~5.0.8",
+    "@vue/test-utils": "^2.4.0",
+    "@vue/vue3-jest": "^27.0.0",
+    "babel-jest": "^27.5.1",
+    "cross-env": "^7.0.2",
+    "cypress": "^12.16.0",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.15.1",
+    "jest": "^27.1.0",
+    "npm-run-all": "~4.1.5",
+    "prettier": "^2.8.8",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2",
+    "vue-template-compiler": "~2.7.14"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 9"
+  ],
+  "engines": {
+    "node": ">= 8.10.x",
+    "npm": ">= 5.6.0"
+  }
+}
